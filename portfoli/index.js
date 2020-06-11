@@ -51,7 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-var delay = 4000;
+var delay = 1000;
 $(".progress-bar").each(function (i) {
     $(this).delay(delay * i).animate({
         width: $(this).attr('aria-valuenow') + '%'
