@@ -35,7 +35,7 @@ var typed = new Typed('#typed', {
 });
 
 var typed_2 = new Typed('#typed_2', {
-    strings: ['Web Developer', ' <strong style="color:black">FilmMaker</strong>'],
+    strings: ['<strong style="color:black">Web Developer</strong>', ' <strong style="color:black">FilmMaker</strong>'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
@@ -67,3 +67,6 @@ $(".progress-bar").each(function (i) {
         }
     });
 });
+
+/* insitalition of aos*/
+AOS.init();
