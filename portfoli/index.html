@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <!--aso fils-->
     <link rel="stylesheet" href="./vonder/css/aos.css">
+    <link href="/vonder/boxicons/css/boxicons.min.css" rel="stylesheet">
     <title> Portfolio</title>
 </head>
 
@@ -18,11 +19,18 @@
 
     <header id="header">
         <div class="row m-0">
-            <div class="col-3 gbcolor-black">
+            <div class="col-3 gbcolor">
                 <nav class="primary navbar-expand-md">
                     <div class="site-title text-center text-light py-5">
                         <a href="#" class="navbar-brand font-size font-size-40">WaHa</a>
                         <p class="description text-uppercase">Walid Hallouli</p>
+                        <div class="social-links mt-3 text-center">
+
+                            <a href="#" class="facebook"><i class='bx bxl-facebook '></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram "></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin "></i></a>
+                        </div>
                     </div>
                     <div class="d-flex flex-column ">
                         <a href="#home"
@@ -82,31 +90,36 @@
                             <!--img-fluid to make the img reponsiv-->
                             <img src="./assets/p2.jpg" alt="Profile image " class="img-fluid">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 " id="hado">
                             <h6 class="font-size text-uppercase  font-size-27 text-secondary "> Aboute Me</h6>
                             <h5>I'm Walid Hallouli & <span id="typed_2"></span></h5>
                             <p class="font-tow text-black-0 py-2">
-                                My name is Walid, I am 20 years old, I am a computer science. I like to create content
+                                I am computer scientist in Lyon, am 20 years old . I like to create content
                                 by building application, web or video and editing photo.
                             </p>
-                            <div class="d-flex flex-row flex-wrap justify-content-between py-4">
+                            <div class="d-flex flex-row flex-wrap justify-content-between py-4"
+                                style="font-size: 20px;">
                                 <div class="d-flex flex-column">
-                                    <p class=""> <b>Birthday: </b> <span class="text-black-50">20
+                                    <p class=""> <strong> <b>Birthday: </b></strong> <span class="text-black-10">20
                                             June2000</span></p>
-                                    <p class="font-size"> <b>Number: </b> <span class="text-black-50">0654
+                                    <p class=""><strong> <b>Number: </b></strong> <span class="text-black-40">0654
                                             8752120</span></p>
+                                    <p class=""><strong> <b>Age: </b></strong> <span class="text-black-40">20</span></p>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <p class="font-size"> <b class="text-black-40">Email: </b> <span
+                                    <p class=""> <strong><b class="text-black-40">Email: </b></strong> <span
                                             class=" font-Raleway"></span>
                                         mhwalid7@gmail.com</span></p>
-                                    <p class="font-size"> <b>Instagram: </b> <span class="text-black-40"> @walid
+                                    <p class=""> <strong><b>Instagram: </b></strong> <span class="text-black-40"> @walid
                                             hallouli</span></p>
+                                    <p class=""> <strong><b>City: </b></strong> <span class="text-black-40">Lyon
+                                        </span></p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-dark text-uppercase mr-3">Heir Me</button>
-                            <a href="./assets/news/Walid's Resume.pdf" download="walid's Resume"><button type="button"
-                                    class="btn btn-dark text-uppercase mr-3">Download CV</button></a>
+                            <button id="btn1" type="button" class="btn btn-dark text-uppercase mr-3">Hier Me</button>
+                            <a href="./assets/news/Walid's Resume.pdf" download="walid's Resume"><button id="btn2"
+                                    type="button" class="btn btn-dark text-uppercase mr-3"><span> Download
+                                        CV</span></button></a>
 
                         </div>
                     </div>
@@ -251,7 +264,7 @@
                                     <h4 class="font-Raleway py-4">Web Development</h4>
                                     <p class="font-Raleway font-size-16 text-black-50">Creat a new cantent and bluid
                                         it as a web application , it's somthing i feel good doing that ,
-                                        leargin new fremwork , solving issue that what make me progress in this domain
+                                        leargin new fremwork
                                     </p>
                                 </div>
 
@@ -316,9 +329,8 @@
                         <h5 class=" font-Raleway font-size-27 text-uppercase">Createve Work </h5>
 
                     </div>
-                    <div class="row">
-                        <div id="1" class="col-sm-4 my-3" "
-                            data-aos-duration=" 2000">
+                    <div class="row ">
+                        <div id="1" class="col-sm-4 my-3 " data-aos-duration=" 2000">
                             <img id="my-img" src="./assets/work/img2.jpg" alt="work1" class="img-fluid mt-n1 "
                                 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
                                 onmouseover="this.src='./assets/work/img1.jpeg';"
@@ -454,7 +466,7 @@
                             </div>
                             <div class="col-sm-4 my-5  text-center">
                                 <span class="mr-3"> <a href="https://www.facebook.com/walid.hallouli"><i
-                                            class="fab fa-facebook-f"></i></a></span>
+                                            class='bx bxl-facebook-circle bx-burst'></i></a></span>
                                 <span class="mr-3"> <a href="https://www.instagram.com/walidhallouli/?hl=fr"><i
                                             class="fab fa-instagram"></i> </a></span>
                                 <span class="mr-3"> <a
