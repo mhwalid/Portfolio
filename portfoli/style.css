@@ -65,6 +65,46 @@ body{
 border-bottom: 1px solid var(--color-border);
 }
 
+#header .site-title .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+   transition: 6s;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+    box-shadow: 0 5px 4px rgba(98, 155, 165, 0.473); 
+    
+    
+}
+#header .site-title .social-links a i{
+    font-size: 20px;
+}
+
+#header .site-title .social-links a:hover{
+   
+    transform: translate(0,-15px);
+    color: #fff;
+}
+#header .site-title .social-links a:nth-child(1):hover  {
+    background-image: linear-gradient(to top, #396afc 0%, #2948ff 100%);
+    transform: translate(0,15px);
+}
+
+#header .site-title .social-links a:nth-child(3):hover  {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    transform: translate(0,15px);
+}
+#header .site-title .social-links a:nth-child(4):hover  {
+    background-image: linear-gradient(to top, #7be2ff 0%, #0072b1 100%);
+    transform: translate(0,-15px);
+}
+
 #header .nav-link:hover{
 text-transform: uppercase;
 color: var(--color-white) !important;
@@ -77,8 +117,10 @@ position: fixed;
 top: 25px;
 right: 20px;
 border: 1px solid var(--color-border);
-
 }
+
+.gbcolor{
+    background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);}
 .toggle-left{
     left: 0 !important;
     width: 1000px !important;
@@ -156,11 +198,19 @@ border: 1px solid var(--color-border);
     border-radius: 0;
     border-bottom: 1px solid gray;
     padding: 1.5rem 1rem;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 
+#about .row #hado #btn1:hover {
+   
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);} 
+  
 
+    #about .row #hado #btn2:hover {
+      
+        
+        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);    }
+       
 /* to despaly icon*/
 
 @media screen and (min-width: 768px){

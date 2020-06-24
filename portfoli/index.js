@@ -70,3 +70,4 @@ $(".progress-bar").each(function (i) {
 
 /* insitalition of aos*/
 AOS.init();
+
