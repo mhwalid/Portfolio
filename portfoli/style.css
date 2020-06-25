@@ -97,7 +97,7 @@ border-bottom: 1px solid var(--color-border);
 }
 
 #header .site-title .social-links a:nth-child(3):hover  {
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     transform: translate(0,15px);
 }
 #header .site-title .social-links a:nth-child(4):hover  {
@@ -237,6 +237,26 @@ border: 1px solid var(--color-border);
             height:18em;
                 
         }
+        #work .row .dab img{}
+        
+        #work .row .dab #play {   
+            cursor: pointer;
+            transition: .5s;
+            position: relative;
+            left: 46%;
+            top: -55%;
+            opacity: 0;
+            color:  #ee609c 
+        }
+
+        #work .row .dab #play:hover {
+            opacity: 1;
+            
+  
+        }
+
+       
+
 
 /* to despaly icon*/
 

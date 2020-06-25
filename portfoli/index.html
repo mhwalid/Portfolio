@@ -26,10 +26,12 @@
                         <p class="description text-uppercase">Walid Hallouli</p>
                         <div class="social-links mt-3 text-center">
 
-                            <a href="#"><i class="fab fa-facebook"></i></i></a>
-                            <a href="#"><i class="fab fa-instagram "></i></a>
-                            <a href="#"><i class="fab fa-skype"></i></a>
-                            <a href="#"><i class="fab fa-linkedin "></i></a>
+                            <a href="https://www.facebook.com/walid.hallouli"><i class="fab fa-facebook"></i></i></a>
+                            <a href="https://www.instagram.com/walidhallouli/"><i class="fab fa-instagram "></i></a>
+                            <a href="https://www.youtube.com/channel/UCZIDn2w7Ba0ctADJ3z_BbpQ?view_as=subscriber"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/in/walid-hallouli-1b2642179/"><i
+                                    class="fab fa-linkedin "></i></a>
                         </div>
                     </div>
                     <div class="d-flex flex-column ">
@@ -116,7 +118,8 @@
                                         </span></p>
                                 </div>
                             </div>
-                            <button id="btn1" type="button" class="btn btn-dark text-uppercase mr-3">Hier Me</button>
+                            <a href="mailto:mhwalid7@gmail.com"> <button id="btn1" type="button"
+                                    class="btn btn-dark text-uppercase mr-3">Hier Me</button></a>
                             <a href="./assets/news/Walid's Resume.pdf" download="walid's Resume"><button id="btn2"
                                     type="button" class="btn btn-dark text-uppercase mr-3"><span> Download
                                         CV</span></button></a>
@@ -330,21 +333,28 @@
 
                     </div>
                     <div class="row ">
-                        <div id="1" class="col-sm-4 my-3 " data-aos-duration=" 2000">
+                        <div id="1" class="col-sm-4 my-3  dab" data-aos-duration=" 2000" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic">
+                            <i> <img src="./assets/work/v2_Moment.jpg" alt="work1" class="img-fluid"></i>
+                            <i class="fas fa-play-circle fa-5x " id="play" data-toggle="modal" data-target="#hadaa"></i>
+                        </div>
+                        <!--  <div id="1" class="col-sm-4 my-3 " data-aos-duration=" 2000">
                             <img id="my-img" src="./assets/work/img2.jpg" alt="work1" class="img-fluid mt-n1 "
                                 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
                                 onmouseover="this.src='./assets/work/img1.jpeg';"
                                 onmouseout="this.src='./assets/work/img2.jpg';">
-                        </div>
+                        </div>-->
                         <div id=" 2" class="col-sm-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
                             <img src="./assets/work/img4.JPG" alt="work" class="img-fluid"
                                 onmouseover="this.src='./assets/work/img3.JPG';"
                                 onmouseout="this.src='./assets/work/img4.JPG';">
                         </div>
-                        <div id="3" class="col-sm-4" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                        <div id="3" class="col-sm-4 dab" data-aos="flip-right" data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
-                            <img src="./assets/work/03.jpg" alt="work1" class="img-fluid">
+                            <img src="./assets/work/v1_Moment.jpg" alt="work1" class="img-fluid">
+                            <i class="fas fa-play-circle fa-5x " id="play" data-toggle="modal"
+                                data-target="#staticBackdrop"></i>
                         </div>
                         <div id="4" class="col-sm-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
@@ -358,7 +368,32 @@
                             data-aos-duration="2000">
                             <img src="./assets/work/06.jpg" alt="work1" class="img-fluid">
                         </div>
+                        <div class="modal fade" id="hadaa">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
 
+                                    <div class="modal-body px-0 py-0">
+                                        <video width="100%" controls>
+                                            <source src="assets/work/v2_Trim.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-body px-0 py-0">
+                                        <video width="100%" controls>
+                                            <source src="assets/work/v1_Trim.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -437,7 +472,7 @@
                             <div class="col-sm-6 py-4 px-4">
                                 <h6 class="text-uppercase font-ram font-size-16">Get in touch</h6>
 
-                                <form class="py-3 contact.php" action="forms/contact.php" method="post" role="form">
+                                <form action="" class="py-3">
                                     <div class="row">
                                         <div class="col">
 
@@ -451,10 +486,10 @@
 
                                         </div>
                                     </div>
-                                    <textarea class="form-control" name="message" rows="10" data-rule="required"
+                                    <textarea class="form-control my-3" name="message" rows="3" data-rule="required"
                                         data-msg="Please write something for us" placeholder="Message"></textarea>
-                                    <dir> <span> Thank your , for your message </span></dir>
-                                    <button type="submit" name="btn-send" class="btn btn-dark">Say Hello!</button>
+
+                                    <button type="submit" class="btn btn-dark">Say Hello!</button>
                                 </form>
                             </div>
                         </div>
