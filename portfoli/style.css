@@ -242,15 +242,15 @@ border: 1px solid var(--color-border);
         #work .row .dab #play {   
             cursor: pointer;
             transition: .5s;
-            position: relative;
-            left: 46%;
-            top: -55%;
-            opacity: 0;
-            color:  #ee609c 
+            position: relative !important;
+            left: 41%  !important;
+            top: -55% !important;
+            opacity: 0 !important;
+            color:  #ee609c !important;
         }
 
         #work .row .dab #play:hover {
-            opacity: 1;
+            opacity: 1 !important;
             
   
         }
