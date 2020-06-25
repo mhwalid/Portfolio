@@ -211,6 +211,33 @@ border: 1px solid var(--color-border);
         
         background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);    }
        
+        #serveres .do .row div .panel{
+            border-radius: 15px;
+        }
+
+        #serveres .do .row div .panel:hover {
+            background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 50px #000000;
+            z-index: 2;
+            
+            
+        }
+
+
+
+        #lestproject .row .card:hover .card-body {
+            height:0em;
+             padding:0px 1em;
+                display: none;
+                z-index: 99999;
+                cursor: pointer;
+        }
+        #lestproject .row .card:hover .card-img-top {
+            height:18em;
+                
+        }
+
 /* to despaly icon*/
 
 @media screen and (min-width: 768px){
