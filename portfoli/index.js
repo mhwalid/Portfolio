@@ -20,9 +20,13 @@ $(document).ready(function (e) {
 
 function toggle_onclick($win, $navbar, width) {
     if ($win.width() <= 768) {
-        $navbar.css({ left: `-${width}px` });
+        $navbar.css({
+            left: `-${width}px`
+        });
     } else {
-        $navbar.css({ left: '0px' });
+        $navbar.css({
+            left: '0px'
+        });
     }
 }
 
@@ -68,6 +72,47 @@ $(".progress-bar").each(function (i) {
     });
 });
 
+function myFunction(blue) {
+    console.log(blue);
+    var saa = document.getElementsByClassName('popup-inner');
+    var i;
+    for (i = 0; i < saa.length; i++) {
+        //saa[i].style.bottom = "-1500px";
+        saa[i].style.right = "-200vh";
+
+        saa[i].style.opacity = "0";
+        saa[i].style.transform = "rotate(0)";
+
+    }
+};
+
+
+function changeColor(newColor) {
+
+    var elem = document.getElementById('dab');
+    console.log(newColor);
+    elem.style.visibility = "visible";
+    elem.style.backgroundColor = "'" + newColor + "'";
+    elem.style.opacity = 1;
+    elem.style.right = "10px";
+    elem.style.transform = "rotate(-360deg)";
+    elem.style.transition = ".64s ease-in-out";
+
+
+    var was = document.getElementById('popup');
+    was.style.opacity = 1;
+    was.style.transform = "rotate(-360deg)";
+    was.style.transition = ".64s ease-in-out";
+    was.style.backgroundColor = newColor;
+
+
+
+    //was.style.display = "flex";
+
+}
+
+
+
+
 /* insitalition of aos*/
 AOS.init();
-
