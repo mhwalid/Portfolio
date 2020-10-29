@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,700;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 body {
@@ -469,6 +470,8 @@ body {
 /* to despaly icon*/
 
 @media screen and (min-width: 768px) {
+   
+   
     .toggle-button {
         display: none;
     }
@@ -578,6 +581,36 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b384c', endColorstr='#da5de2', GradientType=1);
 }
 
+
+/* Languages */
+
+.languages .flex {
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+    
+  }
+  
+  .languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+    box-shadow: 5px 5px 5px #000000;
+  }
+  
+  .languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin: 5px;
+  }
+  .languages .card img{
+      margin: 15px;
+  }
+  .languages .card:hover {
+    transform: translateY(-15px);
+    transform: scale(1.1);
+    
+  }
 
 /* animaton for picture * / 
 
@@ -691,7 +724,7 @@ a:hover{
   color: #fff;
   background: rgba(37, 103, 179, 0.945);
   /* Primary color, can be changed via colors.css */
-  
+  Overflow-y: scroll;
   height: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -735,4 +768,12 @@ a:hover{
     margin-right: auto;
     width: 100%;
    
+}
+
+
+
+@media screen and (min-width: 1498px) {
+  .languages .container{
+    margin-left: 122px;
+  }
 }
