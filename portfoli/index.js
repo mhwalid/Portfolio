@@ -29,6 +29,95 @@ function toggle_onclick($win, $navbar, width) {
         });
     }
 }
+ // Testimonials carousel (uses the Owl Carousel library)
+ $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+ $(".lanague-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    margin:15,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      100: {
+        items: 2
+      },
+      200: {
+        items: 3
+      },
+      300: {
+        items: 4
+      },
+      400: {
+        items: 5
+      },
+      500: {
+        items: 6
+      },
+      600: {
+        items: 7
+      },
+      600: {
+        items: 8
+      }
+    }
+  });
+   // Portfolio details carousel
+   $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+   // Porfolio isotope and filter
+   $(window).on('load', function() {
+    var portfolioIsotope = $('.portfolio-containe').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+     
+    });
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function() {
+      $('.venobox').venobox();
+    });
+  });
+
+
+
+
+
+
+
+
+
+
 
 
 var typed = new Typed('#typed', {
@@ -45,15 +134,7 @@ var typed_2 = new Typed('#typed_2', {
     loop: true
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 var delay = 1000;
 $(".progress-bar").each(function (i) {
@@ -110,8 +191,6 @@ function changeColor(newColor) {
     //was.style.display = "flex";
 
 }
-
-
 
 
 /* insitalition of aos*/
