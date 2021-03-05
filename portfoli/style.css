@@ -259,7 +259,7 @@ body {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a+a {
+.portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
 }
 
@@ -490,13 +490,15 @@ body {
 }
 
 #about .row #hado #btn2:hover {
-  background-image: linear-gradient(to right,
-      #b8cbb8 0%,
-      #b8cbb8 0%,
-      #b465da 0%,
-      #cf6cc9 33%,
-      #ee609c 66%,
-      #ee609c 100%);
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
 }
 
 #serveres .do .row div .panel {
@@ -777,7 +779,7 @@ body {
 }
 
 .project .row .pop .card .box1:hover,
-.project .row .pop .card .box1:hover~.bg {
+.project .row .pop .card .box1:hover ~ .bg {
   opacity: 1;
   background: #e2a9e5;
   background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
@@ -787,7 +789,7 @@ body {
 }
 
 .project .row .pop .card .box3:hover,
-.project .row .pop .card .box3:hover~.bg {
+.project .row .pop .card .box3:hover ~ .bg {
   opacity: 1;
   background: #632c65;
   background: -moz-linear-gradient(-45deg, #632c65 15%, #56a5e2 100%);
@@ -797,7 +799,7 @@ body {
 }
 
 .project .row .pop .card .box2:hover,
-.project .row .pop .card .box2:hover~.bg {
+.project .row .pop .card .box2:hover ~ .bg {
   opacity: 1;
   background: #4b384c;
   background: -moz-linear-gradient(-45deg, #4b384c 15%, #da5de2 100%);
@@ -996,4 +998,10 @@ a:hover {
   .languages .container {
     margin-left: 122px;
   }
+}
+
+/* shadow*/
+.shadow {
+  border-radius: 25px;
+  box-shadow: 19px 19px 2px 1px rgba(10, 0, 0, 0.2);
 }
