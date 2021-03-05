@@ -160,7 +160,6 @@ function myFunction(blue) {
   for (i = 0; i < saa.length; i++) {
     //saa[i].style.bottom = "-1500px";
     saa[i].style.bottom = "-10vh";
-
     saa[i].style.opacity = "0";
     saa[i].style.transform = "rotate(0)";
 
@@ -172,7 +171,7 @@ function changeColor(newColor, item, id) {
 
   var elem = document.getElementById(id);
   console.log(newColor);
-  elem.style.visibility = "visible";
+  // elem.style.visibility = "visible";
   elem.style.backgroundColor = "'" + newColor + "'";
   elem.style.opacity = 1;
   elem.style.right = "10px";
