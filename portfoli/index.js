@@ -153,9 +153,12 @@ $(".progress-bar").each(function (i) {
   });
 });
 
-function myFunction(blue) {
+function myFunction(blue, k) {
   console.log(blue);
   var saa = document.getElementsByClassName('popup-inner');
+  var video = document.getElementsByClassName('video');
+  
+  
   var i;
   for (i = 0; i < saa.length; i++) {
     //saa[i].style.bottom = "-1500px";
@@ -164,6 +167,9 @@ function myFunction(blue) {
     saa[i].style.transform = "rotate(0)";
 
   }
+  video[k].pause();
+  video.currentTime = 0;
+
 };
 
 
