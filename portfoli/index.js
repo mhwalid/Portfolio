@@ -121,14 +121,14 @@ $(window).on('load', function () {
 
 
 var typed = new Typed('#typed', {
-  strings: ['Developpeur web', ' <strong style="color:black">Alternant en informatique</strong>'],
+  strings: ['Développeur web', ' <strong style="color:black">Alternant en informatique</strong>'],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true
 });
 
 var typed_2 = new Typed('#typed_2', {
-  strings: ['<strong style="color:black">Developpeur web</strong>', ' <strong style="color:black">Alternant en informatique</strong>'],
+  strings: ['<strong style="color:black">Développeur web</strong>', ' <strong style="color:black">Alternant en informatique</strong>'],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true
