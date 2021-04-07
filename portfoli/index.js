@@ -83,7 +83,7 @@ $(".portfolio-details-carousel").owlCarousel({
   autoplay: true,
   dots: true,
   loop: true,
-  items: 1
+  items: 1 
 });
 
 // Porfolio isotope and filter
