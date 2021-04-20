@@ -112,14 +112,6 @@ $(window).on('load', function () {
 
 
 
-
-
-
-
-
-
-
-
 var typed = new Typed('#typed', {
   strings: ['Développeur web', ' <strong style="color:black">Alternant en informatique</strong>'],
   typeSpeed: 50,
@@ -183,17 +175,14 @@ function changeColor(newColor, item, id) {
   elem.style.right = "10px";
   elem.style.transform = "rotate(-360deg)";
   elem.style.transition = ".64s ease-in-out";
-
+  
   var was = document.getElementById(item);
   was.style.opacity = 1;
   was.style.transform = "rotate(-360deg)";
   was.style.transition = ".64s ease-in-out";
   was.style.backgroundColor = newColor;
 
-
-
   //was.style.display = "flex";
-
 }
 
 
