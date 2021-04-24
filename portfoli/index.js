@@ -172,7 +172,7 @@ function changeColor(newColor, item, id) {
   // elem.style.visibility = "visible";
   elem.style.backgroundColor = "'" + newColor + "'";
   elem.style.opacity = 1;
-  elem.style.right = "10px";
+  elem.style.right = "100px";
   elem.style.transform = "rotate(-360deg)";
   elem.style.transition = ".64s ease-in-out";
   
