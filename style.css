@@ -673,22 +673,6 @@ body {
   cursor: pointer;
   text-decoration: blink;
 }
-
-/* 
-#lestproject .row .card:hover .card-body {
-    height: 0em;
-    padding: 0px 1em;
-    display: none;
-    z-index: 99999;
-    cursor: pointer;
-}
-
- #lestproject .row .card:hover .card-img-top {
-            height:18em;
-                 
-        } 
-#work .row .dab img {}
-*/
 #work .row .dab #play {
   cursor: pointer;
   transition: 0.5s;
