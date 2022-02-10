@@ -6,7 +6,7 @@ $(document).ready(function (e) {
 
   toggle_onclick($win, $navbar, width);
 
-  //resiz event
+  
 // event 
   $win.resize(function () {
     toggle_onclick($win, $navbar, width);
